@@ -1,0 +1,109 @@
+.menu-image{
+    min-height: 50vh;
+    background:url(../coffee.gif)center/cover fixed no-repeat;
+
+} 
+.menu-text{
+    min-height: 80vh;
+    align-items: center;
+    columns: #000000;
+    background: coral;
+    padding: 40px 0;
+
+}
+.menu-text-center{
+    width:90%;
+    margin:0 auto;
+}
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu-text p{
+    margin: 20px 0;
+    line-height: 2;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    grid-gap: 1.5rem;
+    color: white;
+}
+
+.recipes-grid-item {
+    height: 23rem;
+    padding: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.div_buttonadd {
+    display: inline-block;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    height: 4rem;
+    width: auto;
+    background-color: rgba(254, 226, 142, 1);
+    transition: background-color 650ms;
+    color: rgba(102, 43, 65, 1);
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+.div_buttonadd:hover {
+    background-color: rgba(255, 243, 217, 1);
+    color: rgba(73, 169, 217, 1);
+    font-weight: bold;
+}
+header {
+  
+    height: 8vh;
+    background-size: cover;
+    background-position: center;
+    position:static;
+}
+ul
+{
+    
+    float:left;
+    list-style-type: circle;
+    margin-top:25px;
+}
+ul li
+{
+    display:inline-block;
+}
+ul li a
+{
+    text-decoration: dotted;
+    color:black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in;
+
+
+}
+ul li a:hover
+{
+    background-color:saddlebrown ;
+    color:white; 
+}
+ul li.active a
+    {
+        background-color: saddlebrown;
+        color: white;
+    }
+
+    

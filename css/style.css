@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic'
+}
+
+body {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: static;
+}
+
+header {
+    background: url(../images/image1.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    position: static;
+}
+
+ul {
+    float: left;
+    list-style-type: circle;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: dotted;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in;
+}
+
+ul li a:hover {
+    background-color: saddlebrown;
+    color: white;
+}
+
+ul li.active a {
+    background-color: saddlebrown;
+    color: white;
+}
+
+.croissant img {
+    float: left;
+    position: static;
+    width: 700px;
+    height: 700px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    font-size: 38px;
+}
+
+.Paragraph {
+    float: right;
+    position: fixed;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+a.button {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    font-size: 38px;
+    color: black;
+    background-color: white;
+    border: 4px;
+    border-style: solid;
+}
+
+a.button:hover {
+    color: saddlebrown;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration-style: none;
+    transition: 0.9s ease;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: white;
+}
+
+p {
+    justify-content: center;
+    position: absolute;
+    top: 34%;
+    left: 25%;
+    font-size: 4rem;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    height: 13vh;
+    background-size: cover;
+    background-position: center;
+    position: static;
+}
