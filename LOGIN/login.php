@@ -1,18 +1,6 @@
 <?php
 require_once '../USER/test.php';
 
-if (isset($_POST['LOGIN'])) 
-{
-	//replace with login-func function
-	//require_once("connect.php");
-
-	$username = $_POST['uname'];
-	$pasword = $_POST['password'];
-
-	login_func($username, $pasword); 
-
-}
-
 
 ?>
  <!DOCTYPE html>
@@ -43,22 +31,14 @@ if (isset($_POST['LOGIN']))
             <div class="box_">
                 
                 <h1>Login</h1>
-                <div class=" text_box">
-                   
-                     <input type="text" name="uname" placeholder="Username" id="username">
-
+                <div class=" text_box">     
+                <input type="text" name="uname" placeholder="Username" id="username">
                 </div>
-
-                <div class=" text_box">
-                     
-                     <input type="password" name="password" placeholder="Password" id="password">
-
+                <div class=" text_box">                    
+               <input type="password" name="password" placeholder="Password" id="password">
                 </div>
-                
-            
                      <div class="button">
                      <input type="submit" name="LOGIN" value="LOGIN">
-
 				</div>
 				<div>
 					<p> Don't have an account yet?<a href= "../REGISTER/registration.php">New Account</a></p>
