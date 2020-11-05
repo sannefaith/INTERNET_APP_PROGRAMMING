@@ -2,19 +2,6 @@
 require_once '../USER/test.php';
 
 
-//if register button is clicked
-
-if(isset($_POST['register']))
-{
-    $email=$_POST['email'];
-    $username=$_POST['uname'];
-    $password=$_POST['password'];
-    $confirmpass=$_POST['cpassword'];
-
-
-    register_func($username,$email,$password,$confirmpass); 
-
-}
 
 ?>
 
