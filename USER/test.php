@@ -1,5 +1,33 @@
 <?php
 
+// If login button is clicked 
+if (isset($_POST['LOGIN'])) 
+{
+	//replace with login-func function
+	//require_once("connect.php");
+
+	$username = $_POST['uname'];
+	$pasword = $_POST['password'];
+
+	login_func($username, $pasword); 
+
+
+}
+ 
+//if register button is clicked
+
+if(isset($_POST['register']))
+{
+    $email=$_POST['email'];
+    $username=$_POST['uname'];
+    $password=$_POST['password'];
+    $confirmpass=$_POST['cpassword'];
+
+
+    register_func($username,$email,$password,$confirmpass); 
+
+}
+
 
 //connecting to the database
 function connect_func()
@@ -16,9 +44,6 @@ function connect_func()
 	return $conn;
 }
 
-
-
-//Function used to login 
 function login_func($username, $pasword) 
 {
 	
@@ -134,7 +159,7 @@ function register_func($username,  $email, $password,$confirmpass)
     else
     
 	{
-        //enter registration functio here if all else fails
+        //enter registration function here if all else fails
        $conn=connect_func();
         if ( $conn)
         {
